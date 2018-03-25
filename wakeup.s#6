@@ -4209,11 +4209,11 @@ http://www.micro-bridge.com/data/add/amc7135.pdf</description>
 <instance part="GND1" gate="1" x="-30.48" y="5.08"/>
 <instance part="SV1" gate="1" x="40.64" y="-45.72" rot="R180"/>
 <instance part="P+2" gate="VCC" x="53.34" y="-38.1"/>
-<instance part="GND4" gate="1" x="147.32" y="25.4"/>
-<instance part="U$1" gate="G$1" x="147.32" y="33.02"/>
+<instance part="GND4" gate="1" x="119.38" y="12.7"/>
+<instance part="U$1" gate="G$1" x="119.38" y="22.86"/>
 <instance part="SL1" gate="G$1" x="203.2" y="38.1" rot="R180"/>
-<instance part="GND2" gate="1" x="147.32" y="0"/>
-<instance part="U$2" gate="G$1" x="147.32" y="10.16"/>
+<instance part="GND2" gate="1" x="144.78" y="12.7"/>
+<instance part="U$2" gate="G$1" x="144.78" y="22.86"/>
 <instance part="GND3" gate="1" x="147.32" y="-27.94"/>
 <instance part="U$3" gate="G$1" x="147.32" y="-17.78"/>
 <instance part="GND5" gate="1" x="147.32" y="-55.88"/>
@@ -4287,11 +4287,7 @@ http://www.micro-bridge.com/data/add/amc7135.pdf</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <pinref part="GND4" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="147.32" y1="2.54" x2="147.32" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="15.24" x2="119.38" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
@@ -4321,13 +4317,21 @@ http://www.micro-bridge.com/data/add/amc7135.pdf</description>
 <wire x1="48.26" y1="-48.26" x2="53.34" y2="-48.26" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-48.26" x2="53.34" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="144.78" y1="15.24" x2="144.78" y2="17.78" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="147.32" y1="17.78" x2="157.48" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="43.18" x2="157.48" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="43.18" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="OUT"/>
+<wire x1="119.38" y1="27.94" x2="119.38" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="43.18" x2="147.32" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="OUT"/>
-<wire x1="147.32" y1="15.24" x2="147.32" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="12.7" x2="147.32" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="27.94" x2="157.48" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -4435,13 +4439,24 @@ http://www.micro-bridge.com/data/add/amc7135.pdf</description>
 <label x="76.2" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="RED_LED" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
-<wire x1="137.16" y1="33.02" x2="129.54" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="1" pin="PD5(T1/OC0B/PCINT21)"/>
+<wire x1="71.12" y1="33.02" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
+<label x="78.74" y="33.02" size="1.778" layer="95"/>
+</segment>
+<segment>
 <pinref part="U$2" gate="G$1" pin="VDD"/>
-<wire x1="137.16" y1="10.16" x2="129.54" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="33.02" x2="129.54" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="22.86" x2="132.08" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="22.86" x2="132.08" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="7.62" x2="106.68" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="7.62" x2="106.68" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VDD"/>
+<wire x1="106.68" y1="22.86" x2="109.22" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="22.86" x2="101.6" y2="22.86" width="0.1524" layer="91"/>
+<junction x="106.68" y="22.86"/>
+<label x="93.98" y="22.86" size="1.778" layer="95"/>
+<wire x1="101.6" y1="22.86" x2="96.52" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

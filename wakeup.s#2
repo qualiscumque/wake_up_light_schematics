@@ -4343,7 +4343,7 @@ http://www.micro-bridge.com/data/add/amc7135.pdf</description>
 <part name="SL1" library="con-amp-quick" deviceset="M08" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="SL2" library="con-amp-quick" deviceset="M02S" device=""/>
-<part name="C2" library="rcl" deviceset="C-EU" device="025-030X050" value="47nF"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="47nF"/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
@@ -4364,7 +4364,7 @@ http://www.micro-bridge.com/data/add/amc7135.pdf</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="U$6" library="1" deviceset="AMC7135" device=""/>
 <part name="IC2" library="atmega8" deviceset="ATMEGA48/88/168" device="-AU"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="025-030X050" value="47nF"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="47nF"/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 </parts>
