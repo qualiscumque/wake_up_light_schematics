@@ -7,7 +7,6 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="e14_Rpi3_RevA.lbr"
 
 [Win_1]
 Type="Control Panel"
@@ -16,5 +15,5 @@ State=2
 Number=0
 
 [Desktop]
-Screen="2736 1824"
+Screen="1368 912"
 Window="Win_1"
