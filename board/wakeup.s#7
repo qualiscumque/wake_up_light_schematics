@@ -9222,7 +9222,7 @@ http://www.micro-bridge.com/data/add/amc7135.pdf</description>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="47nF"/>
 <part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="P+3" library="supply1" deviceset="VCC" device=""/>
+<part name="+5V" library="supply1" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U$7" library="1" deviceset="AMC7135" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
@@ -9308,7 +9308,7 @@ http://www.micro-bridge.com/data/add/amc7135.pdf</description>
 <instance part="C2" gate="G$1" x="78.74" y="71.12"/>
 <instance part="P+7" gate="VCC" x="78.74" y="96.52"/>
 <instance part="GND7" gate="1" x="78.74" y="48.26"/>
-<instance part="P+3" gate="VCC" x="200.66" y="208.28"/>
+<instance part="+5V" gate="VCC" x="200.66" y="208.28"/>
 <instance part="GND4" gate="1" x="302.26" y="152.4"/>
 <instance part="U$7" gate="G$1" x="302.26" y="162.56"/>
 <instance part="GND11" gate="1" x="327.66" y="152.4"/>
@@ -9543,6 +9543,24 @@ http://www.micro-bridge.com/data/add/amc7135.pdf</description>
 <wire x1="66.04" y1="172.72" x2="66.04" y2="175.26" width="0.1524" layer="91"/>
 <junction x="66.04" y="175.26"/>
 </segment>
+<segment>
+<pinref part="+5V" gate="VCC" pin="VCC"/>
+<wire x1="200.66" y1="200.66" x2="200.66" y2="205.74" width="0.1524" layer="91"/>
+<pinref part="SL1" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="200.66" x2="200.66" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="195.58" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
+<junction x="200.66" y="200.66"/>
+<wire x1="200.66" y1="198.12" x2="200.66" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="193.04" x2="200.66" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="SL1" gate="G$1" pin="2"/>
+<wire x1="231.14" y1="198.12" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
+<junction x="200.66" y="198.12"/>
+<pinref part="SL1" gate="G$1" pin="3"/>
+<wire x1="231.14" y1="195.58" x2="200.66" y2="195.58" width="0.1524" layer="91"/>
+<junction x="200.66" y="195.58"/>
+<pinref part="SL1" gate="G$1" pin="4"/>
+<wire x1="231.14" y1="193.04" x2="200.66" y2="193.04" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC" class="0">
 <segment>
@@ -9561,24 +9579,6 @@ http://www.micro-bridge.com/data/add/amc7135.pdf</description>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <wire x1="210.82" y1="38.1" x2="215.9" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="215.9" y1="38.1" x2="215.9" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<wire x1="200.66" y1="200.66" x2="200.66" y2="205.74" width="0.1524" layer="91"/>
-<pinref part="SL1" gate="G$1" pin="1"/>
-<wire x1="231.14" y1="200.66" x2="200.66" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="195.58" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
-<junction x="200.66" y="200.66"/>
-<wire x1="200.66" y1="198.12" x2="200.66" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="193.04" x2="200.66" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="SL1" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="198.12" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
-<junction x="200.66" y="198.12"/>
-<pinref part="SL1" gate="G$1" pin="3"/>
-<wire x1="231.14" y1="195.58" x2="200.66" y2="195.58" width="0.1524" layer="91"/>
-<junction x="200.66" y="195.58"/>
-<pinref part="SL1" gate="G$1" pin="4"/>
-<wire x1="231.14" y1="193.04" x2="200.66" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
