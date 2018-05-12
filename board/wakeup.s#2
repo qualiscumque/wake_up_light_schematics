@@ -24953,12 +24953,22 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <wire x1="48.26" y1="172.72" x2="27.94" y2="172.72" width="0.1524" layer="91"/>
 <label x="27.94" y="172.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="1" pin="PC0(ADC0/PCINT8)"/>
+<wire x1="218.44" y1="142.24" x2="231.14" y2="142.24" width="0.1524" layer="91"/>
+<label x="231.14" y="142.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="I2C_SCL1" class="0">
 <segment>
 <pinref part="K1" gate="G$1" pin="5"/>
 <wire x1="48.26" y1="170.18" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
 <label x="27.94" y="170.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="1" pin="PC1(ADC1/PCINT9)"/>
+<wire x1="218.44" y1="139.7" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
+<label x="243.84" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL0_I2C_ID_EEPROM" class="0">
