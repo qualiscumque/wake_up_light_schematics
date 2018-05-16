@@ -5370,12 +5370,6 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
-<symbol name="VCC">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -5408,19 +5402,6 @@ Source: AVX .. aphvc.pdf</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="+5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VCC" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="VCC" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -24277,12 +24258,10 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="SV1" library="con-ml" deviceset="ML6" device=""/>
-<part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="SL1" library="con-amp-quick" deviceset="M08" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="SL2" library="con-amp-quick" deviceset="M02S" device=""/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="47nF"/>
-<part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="U$7" library="1" deviceset="AMC7135" device=""/>
@@ -24302,7 +24281,6 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <part name="U$6" library="1" deviceset="AMC7135" device=""/>
 <part name="IC2" library="atmega8" deviceset="ATMEGA48/88/168" device="-AU"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="47nF"/>
-<part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="J1" library="con-jack" deviceset="JACK-PLUG" device="1"/>
 <part name="CREE_LED1" library="CreeXL-MC-E" deviceset="CREE_XL_MCE" device=""/>
@@ -24311,6 +24289,9 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <part name="SL3" library="con-amp-quick" deviceset="M04" device=""/>
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -24372,13 +24353,11 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <attribute name="VALUE" x="68.58" y="185.42" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SV1" gate="1" x="203.2" y="35.56" rot="R180"/>
-<instance part="P+2" gate="VCC" x="215.9" y="43.18"/>
 <instance part="SL1" gate="G$1" x="236.22" y="193.04" rot="R180"/>
 <instance part="GND6" gate="1" x="215.9" y="27.94"/>
 <instance part="SL2" gate="-1" x="58.42" y="73.66"/>
 <instance part="SL2" gate="-2" x="58.42" y="68.58"/>
 <instance part="C2" gate="G$1" x="78.74" y="71.12"/>
-<instance part="P+7" gate="VCC" x="78.74" y="96.52"/>
 <instance part="GND7" gate="1" x="78.74" y="48.26"/>
 <instance part="GND4" gate="1" x="302.26" y="152.4"/>
 <instance part="U$7" gate="G$1" x="302.26" y="162.56"/>
@@ -24398,7 +24377,6 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <instance part="U$6" gate="G$1" x="327.66" y="63.5"/>
 <instance part="IC2" gate="1" x="187.96" y="114.3"/>
 <instance part="C3" gate="G$1" x="134.62" y="101.6"/>
-<instance part="P+4" gate="VCC" x="134.62" y="127"/>
 <instance part="GND15" gate="1" x="134.62" y="78.74"/>
 <instance part="J1" gate="G$1" x="205.74" y="238.76"/>
 <instance part="CREE_LED1" gate="G$1" x="320.04" y="238.76" rot="R90"/>
@@ -24415,6 +24393,15 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <attribute name="VALUE" x="142.24" y="190.5" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND17" gate="1" x="139.7" y="172.72"/>
+<instance part="+3V2" gate="G$1" x="134.62" y="127" smashed="yes">
+<attribute name="VALUE" x="137.16" y="129.54" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="+3V3" gate="G$1" x="78.74" y="96.52" smashed="yes">
+<attribute name="VALUE" x="81.28" y="99.06" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="+3V6" gate="G$1" x="215.9" y="43.18" smashed="yes">
+<attribute name="VALUE" x="218.44" y="45.72" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -24628,6 +24615,37 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <wire x1="43.18" y1="154.94" x2="43.18" y2="175.26" width="0.1524" layer="91"/>
 <junction x="43.18" y="175.26"/>
 </segment>
+<segment>
+<wire x1="157.48" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="114.3" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="104.14" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
+<junction x="134.62" y="114.3"/>
+<pinref part="IC2" gate="1" pin="VCC@2"/>
+<wire x1="157.48" y1="111.76" x2="144.78" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="111.76" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
+<junction x="144.78" y="114.3"/>
+<pinref part="IC2" gate="1" pin="VCC@1"/>
+<pinref part="+3V2" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<wire x1="78.74" y1="78.74" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="78.74" y1="73.66" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="SL2" gate="-1" pin="S"/>
+<wire x1="63.5" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="73.66" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
+<junction x="78.74" y="78.74"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="SV1" gate="1" pin="2"/>
+<wire x1="210.82" y1="38.1" x2="215.9" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="38.1" x2="215.9" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="SDA0_I2C_ID_EEPROM" class="0">
 <segment>
@@ -24696,41 +24714,6 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <wire x1="152.4" y1="182.88" x2="139.7" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="182.88" x2="139.7" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
-</segment>
-</net>
-<net name="VCC" class="0">
-<segment>
-<pinref part="P+7" gate="VCC" pin="VCC"/>
-<wire x1="78.74" y1="78.74" x2="78.74" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="78.74" y1="73.66" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="SL2" gate="-1" pin="S"/>
-<wire x1="63.5" y1="73.66" x2="71.12" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="73.66" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="78.74" x2="78.74" y2="78.74" width="0.1524" layer="91"/>
-<junction x="78.74" y="78.74"/>
-</segment>
-<segment>
-<pinref part="SV1" gate="1" pin="2"/>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="210.82" y1="38.1" x2="215.9" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="38.1" x2="215.9" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-<wire x1="152.4" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="114.3" x2="137.16" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="114.3" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="104.14" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<junction x="134.62" y="114.3"/>
-<pinref part="IC2" gate="1" pin="VCC@2"/>
-<wire x1="157.48" y1="111.76" x2="144.78" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="111.76" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
-<junction x="144.78" y="114.3"/>
-<pinref part="IC2" gate="1" pin="VCC@1"/>
-<wire x1="157.48" y1="114.3" x2="152.4" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -24970,12 +24953,22 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <wire x1="48.26" y1="172.72" x2="27.94" y2="172.72" width="0.1524" layer="91"/>
 <label x="27.94" y="172.72" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="1" pin="PC0(ADC0/PCINT8)"/>
+<wire x1="218.44" y1="142.24" x2="231.14" y2="142.24" width="0.1524" layer="91"/>
+<label x="231.14" y="142.24" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="I2C_SCL1" class="0">
 <segment>
 <pinref part="K1" gate="G$1" pin="5"/>
 <wire x1="48.26" y1="170.18" x2="27.94" y2="170.18" width="0.1524" layer="91"/>
 <label x="27.94" y="170.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="IC2" gate="1" pin="PC1(ADC1/PCINT9)"/>
+<wire x1="218.44" y1="139.7" x2="243.84" y2="139.7" width="0.1524" layer="91"/>
+<label x="243.84" y="139.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL0_I2C_ID_EEPROM" class="0">
