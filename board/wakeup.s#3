@@ -24573,6 +24573,11 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <wire x1="152.4" y1="175.26" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="UR5" gate="G$1" pin="GND"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="327.66" y1="88.9" x2="327.66" y2="91.44" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -25012,13 +25017,6 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <pinref part="SL3" gate="G$1" pin="3"/>
 <wire x1="152.4" y1="177.8" x2="139.7" y2="177.8" width="0.1524" layer="91"/>
 <label x="127" y="177.8" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="UR4_" class="0">
-<segment>
-<pinref part="UR5" gate="G$1" pin="GND"/>
-<pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="327.66" y1="88.9" x2="327.66" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
