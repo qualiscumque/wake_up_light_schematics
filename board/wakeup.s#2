@@ -24034,7 +24034,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <part name="SL1" library="con-amp-quick" deviceset="M08" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="IC2" library="atmega8" deviceset="ATMEGA48/88/168" device="-AU"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C0805" value="100nF"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="SL3" library="con-amp-quick" deviceset="M04" device=""/>
@@ -24042,7 +24042,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="100nF"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0603" value="100nF"/>
 <part name="SL4" library="con-amp-quick" deviceset="M04" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" deviceset="+5V" device=""/>
@@ -24077,16 +24077,16 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <part name="Q6" library="transistor-npn" deviceset="BC846*" device="SMD" technology="B"/>
 <part name="Q7" library="transistor-npn" deviceset="BC846*" device="SMD" technology="B"/>
 <part name="Q8" library="transistor-npn" deviceset="BC846*" device="SMD" technology="B"/>
-<part name="R12" library="resistor" deviceset="R-EU_" device="M0805" value="1k">
+<part name="R12" library="resistor" deviceset="R-EU_" device="R0603" value="1k">
 <attribute name="TOLERANCE" value="5%"/>
 </part>
-<part name="R13" library="resistor" deviceset="R-EU_" device="M0805" value="1k">
+<part name="R13" library="resistor" deviceset="R-EU_" device="R0603" value="1k">
 <attribute name="TOLERANCE" value="5%"/>
 </part>
-<part name="R14" library="resistor" deviceset="R-EU_" device="M0805" value="1k">
+<part name="R14" library="resistor" deviceset="R-EU_" device="R0603" value="1k">
 <attribute name="TOLERANCE" value="5%"/>
 </part>
-<part name="R15" library="resistor" deviceset="R-EU_" device="M0805" value="1k">
+<part name="R15" library="resistor" deviceset="R-EU_" device="R0603" value="1k">
 <attribute name="TOLERANCE" value="5%"/>
 </part>
 <part name="P+12" library="supply1" deviceset="+5V" device=""/>
@@ -24927,7 +24927,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <wire x1="48.26" y1="101.6" x2="33.02" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="WHITE_LED1" class="0">
+<net name="WHITE_LED" class="0">
 <segment>
 <wire x1="27.94" y1="38.1" x2="43.18" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R19" gate="G$1" pin="2"/>
@@ -24947,9 +24947,9 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <label x="139.7" y="177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="325.12" y1="45.72" x2="284.48" y2="45.72" width="0.1524" layer="91"/>
-<label x="284.48" y="45.72" size="1.778" layer="95"/>
-<pinref part="CREE_LED2" gate="G$2" pin="C"/>
+<wire x1="284.48" y1="71.12" x2="325.12" y2="71.12" width="0.1524" layer="91"/>
+<label x="284.48" y="71.12" size="1.778" layer="95"/>
+<pinref part="CREE_LED2" gate="G$3" pin="C"/>
 </segment>
 </net>
 <net name="BLUE_LED_OUT" class="0">
@@ -24965,9 +24965,9 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <label x="139.7" y="121.92" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="284.48" y1="71.12" x2="325.12" y2="71.12" width="0.1524" layer="91"/>
-<label x="284.48" y="71.12" size="1.778" layer="95"/>
-<pinref part="CREE_LED2" gate="G$3" pin="C"/>
+<wire x1="325.12" y1="45.72" x2="284.48" y2="45.72" width="0.1524" layer="91"/>
+<label x="284.48" y="45.72" size="1.778" layer="95"/>
+<pinref part="CREE_LED2" gate="G$2" pin="C"/>
 </segment>
 </net>
 <net name="WHITE_LED_OUT" class="0">
@@ -24983,9 +24983,9 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <label x="134.62" y="58.42" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="284.48" y1="58.42" x2="325.12" y2="58.42" width="0.1524" layer="91"/>
-<label x="284.48" y="58.42" size="1.778" layer="95"/>
-<pinref part="CREE_LED2" gate="G$4" pin="C"/>
+<wire x1="284.48" y1="83.82" x2="325.12" y2="83.82" width="0.1524" layer="91"/>
+<label x="284.48" y="83.82" size="1.778" layer="95"/>
+<pinref part="CREE_LED2" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="RED_LED_OUT" class="0">
@@ -25001,9 +25001,9 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <label x="142.24" y="236.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="284.48" y1="83.82" x2="325.12" y2="83.82" width="0.1524" layer="91"/>
-<label x="284.48" y="83.82" size="1.778" layer="95"/>
-<pinref part="CREE_LED2" gate="G$1" pin="C"/>
+<wire x1="284.48" y1="58.42" x2="325.12" y2="58.42" width="0.1524" layer="91"/>
+<label x="284.48" y="58.42" size="1.778" layer="95"/>
+<pinref part="CREE_LED2" gate="G$4" pin="C"/>
 </segment>
 </net>
 <net name="TEST1" class="0">
