@@ -15,7 +15,7 @@ UsedLibrary="libs/CreeXL-MC-E.lbr"
 [Win_1]
 Type="Control Panel"
 Loc="0 0 1367 848"
-State=1
+State=3
 Number=0
 
 [Desktop]

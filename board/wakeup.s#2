@@ -24113,17 +24113,20 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 </parts>
 <sheets>
 <sheet>
+<description>Main - Connectors and Microcontroller</description>
 <plain>
 <text x="289.56" y="20.32" size="1.778" layer="94" ratio="15">Drawn by:</text>
 <text x="289.56" y="16.51" size="1.778" layer="94" ratio="15">Checked  by:</text>
 <text x="374.65" y="5.08" size="2.54" layer="94" ratio="10">v0.1</text>
-<text x="127" y="165.1" size="1.778" layer="91">Connector for TM1637 7-Segment Display</text>
+<text x="309.88" y="119.38" size="1.778" layer="91">Connector for TM1637 7-Segment Display</text>
 <text x="40.64" y="111.76" size="1.778" layer="91">RaspberryPI GPIO Header</text>
 <text x="162.56" y="231.14" size="1.778" layer="91">External Power Connector 5V</text>
 <wire x1="5.08" y1="55.88" x2="114.3" y2="55.88" width="1.4224" layer="250"/>
 <wire x1="114.3" y1="55.88" x2="114.3" y2="2.54" width="1.4224" layer="250"/>
 <text x="78.74" y="50.8" size="1.778" layer="250">EEPROM für Raspy HAT</text>
-<wire x1="2.54" y1="205.74" x2="111.76" y2="205.74" width="1.4224" layer="250"/>
+<wire x1="2.54" y1="205.74" x2="114.3" y2="205.74" width="1.4224" layer="250"/>
+<wire x1="114.3" y1="55.88" x2="114.3" y2="205.74" width="1.4224" layer="250"/>
+<wire x1="114.3" y1="205.74" x2="114.3" y2="256.54" width="1.4224" layer="250"/>
 </plain>
 <instances>
 <instance part="K1" gate="G$1" x="55.88" y="152.4" rot="R180"/>
@@ -24173,27 +24176,27 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <instance part="P+1" gate="1" x="66.04" y="182.88" smashed="yes">
 <attribute name="VALUE" x="68.58" y="185.42" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SV1" gate="1" x="203.2" y="35.56" rot="R180"/>
-<instance part="SL1" gate="G$1" x="236.22" y="193.04" rot="R180"/>
-<instance part="GND6" gate="1" x="215.9" y="27.94"/>
-<instance part="IC2" gate="1" x="187.96" y="114.3"/>
-<instance part="C3" gate="G$1" x="134.62" y="101.6"/>
-<instance part="GND15" gate="1" x="134.62" y="78.74"/>
-<instance part="P+3" gate="1" x="200.66" y="208.28" smashed="yes">
-<attribute name="VALUE" x="203.2" y="210.82" size="1.778" layer="96" rot="R180"/>
+<instance part="SV1" gate="1" x="335.28" y="236.22" rot="R180"/>
+<instance part="SL1" gate="G$1" x="355.6" y="187.96" rot="R180"/>
+<instance part="GND6" gate="1" x="347.98" y="228.6"/>
+<instance part="IC2" gate="1" x="210.82" y="109.22"/>
+<instance part="C3" gate="G$1" x="157.48" y="96.52"/>
+<instance part="GND15" gate="1" x="157.48" y="73.66"/>
+<instance part="P+3" gate="1" x="320.04" y="203.2" smashed="yes">
+<attribute name="VALUE" x="322.58" y="205.74" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SL3" gate="G$1" x="157.48" y="180.34" rot="R180"/>
-<instance part="P+5" gate="1" x="139.7" y="187.96" smashed="yes">
-<attribute name="VALUE" x="142.24" y="190.5" size="1.778" layer="96" rot="R180"/>
+<instance part="SL3" gate="G$1" x="340.36" y="134.62" rot="R180"/>
+<instance part="P+5" gate="1" x="322.58" y="142.24" smashed="yes">
+<attribute name="VALUE" x="325.12" y="144.78" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND17" gate="1" x="139.7" y="172.72"/>
-<instance part="+3V2" gate="G$1" x="134.62" y="127" smashed="yes">
-<attribute name="VALUE" x="137.16" y="129.54" size="1.778" layer="96" rot="R180"/>
+<instance part="GND17" gate="1" x="322.58" y="127"/>
+<instance part="+3V2" gate="G$1" x="157.48" y="121.92" smashed="yes">
+<attribute name="VALUE" x="160.02" y="124.46" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="+3V6" gate="G$1" x="215.9" y="43.18" smashed="yes">
-<attribute name="VALUE" x="218.44" y="45.72" size="1.778" layer="96" rot="R180"/>
+<instance part="+3V6" gate="G$1" x="347.98" y="243.84" smashed="yes">
+<attribute name="VALUE" x="350.52" y="246.38" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="C4" gate="G$1" x="149.86" y="101.6"/>
+<instance part="C4" gate="G$1" x="172.72" y="96.52"/>
 <instance part="SL4" gate="G$1" x="185.42" y="238.76"/>
 <instance part="GND16" gate="1" x="231.14" y="228.6"/>
 <instance part="P+4" gate="1" x="231.14" y="251.46" smashed="yes">
@@ -24282,29 +24285,29 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <segment>
 <pinref part="SV1" gate="1" pin="6"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="210.82" y1="33.02" x2="215.9" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="33.02" x2="215.9" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="233.68" x2="347.98" y2="233.68" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="233.68" x2="347.98" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="134.62" y1="81.28" x2="134.62" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="86.36" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="76.2" x2="157.48" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="81.28" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="144.78" y1="86.36" x2="157.48" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="86.36" x2="134.62" y2="96.52" width="0.1524" layer="91"/>
-<junction x="134.62" y="86.36"/>
+<wire x1="167.64" y1="81.28" x2="180.34" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="81.28" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
+<junction x="157.48" y="81.28"/>
 <pinref part="IC2" gate="1" pin="GND@2"/>
-<wire x1="157.48" y1="83.82" x2="144.78" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="83.82" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
-<junction x="144.78" y="86.36"/>
+<wire x1="180.34" y1="78.74" x2="167.64" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="78.74" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
+<junction x="167.64" y="81.28"/>
 <pinref part="IC2" gate="1" pin="GND@1"/>
 <pinref part="IC2" gate="1" pin="AGND"/>
-<wire x1="157.48" y1="91.44" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="91.44" x2="144.78" y2="91.44" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="91.44" x2="144.78" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="86.36" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="86.36" x2="167.64" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="86.36" x2="167.64" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="96.52" x2="149.86" y2="91.44" width="0.1524" layer="91"/>
-<junction x="149.86" y="91.44"/>
+<wire x1="172.72" y1="91.44" x2="172.72" y2="86.36" width="0.1524" layer="91"/>
+<junction x="172.72" y="86.36"/>
 </segment>
 <segment>
 <pinref part="SL4" gate="G$1" pin="1"/>
@@ -24327,7 +24330,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 </segment>
 <segment>
 <pinref part="SL3" gate="G$1" pin="4"/>
-<wire x1="152.4" y1="175.26" x2="139.7" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="129.54" x2="322.58" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -24373,27 +24376,27 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <junction x="43.18" y="175.26"/>
 </segment>
 <segment>
-<wire x1="157.48" y1="114.3" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="114.3" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="114.3" x2="134.62" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="109.22" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="109.22" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="109.22" x2="157.48" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="104.14" x2="134.62" y2="114.3" width="0.1524" layer="91"/>
-<junction x="134.62" y="114.3"/>
+<wire x1="157.48" y1="99.06" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
+<junction x="157.48" y="109.22"/>
 <pinref part="IC2" gate="1" pin="VCC@2"/>
-<wire x1="157.48" y1="111.76" x2="144.78" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="111.76" x2="144.78" y2="114.3" width="0.1524" layer="91"/>
-<junction x="144.78" y="114.3"/>
+<wire x1="180.34" y1="106.68" x2="167.64" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="106.68" x2="167.64" y2="109.22" width="0.1524" layer="91"/>
+<junction x="167.64" y="109.22"/>
 <pinref part="IC2" gate="1" pin="VCC@1"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-<wire x1="144.78" y1="111.76" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
-<junction x="144.78" y="111.76"/>
+<wire x1="167.64" y1="106.68" x2="167.64" y2="101.6" width="0.1524" layer="91"/>
+<junction x="167.64" y="106.68"/>
 <pinref part="IC2" gate="1" pin="AVCC"/>
-<wire x1="144.78" y1="106.68" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="101.6" x2="180.34" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="1" pin="2"/>
-<wire x1="210.82" y1="38.1" x2="215.9" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="38.1" x2="215.9" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="342.9" y1="238.76" x2="347.98" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="238.76" x2="347.98" y2="241.3" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -24443,21 +24446,21 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <junction x="66.04" y="175.26"/>
 </segment>
 <segment>
-<wire x1="200.66" y1="200.66" x2="200.66" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="195.58" x2="320.04" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="SL1" gate="G$1" pin="1"/>
-<wire x1="231.14" y1="200.66" x2="200.66" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="195.58" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
-<junction x="200.66" y="200.66"/>
-<wire x1="200.66" y1="198.12" x2="200.66" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="193.04" x2="200.66" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="195.58" x2="320.04" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="190.5" x2="320.04" y2="193.04" width="0.1524" layer="91"/>
+<junction x="320.04" y="195.58"/>
+<wire x1="320.04" y1="193.04" x2="320.04" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="187.96" x2="320.04" y2="190.5" width="0.1524" layer="91"/>
 <pinref part="SL1" gate="G$1" pin="2"/>
-<wire x1="231.14" y1="198.12" x2="200.66" y2="198.12" width="0.1524" layer="91"/>
-<junction x="200.66" y="198.12"/>
+<wire x1="350.52" y1="193.04" x2="320.04" y2="193.04" width="0.1524" layer="91"/>
+<junction x="320.04" y="193.04"/>
 <pinref part="SL1" gate="G$1" pin="3"/>
-<wire x1="231.14" y1="195.58" x2="200.66" y2="195.58" width="0.1524" layer="91"/>
-<junction x="200.66" y="195.58"/>
+<wire x1="350.52" y1="190.5" x2="320.04" y2="190.5" width="0.1524" layer="91"/>
+<junction x="320.04" y="190.5"/>
 <pinref part="SL1" gate="G$1" pin="4"/>
-<wire x1="231.14" y1="193.04" x2="200.66" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="187.96" x2="320.04" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="1" pin="+5V"/>
 </segment>
 <segment>
@@ -24481,8 +24484,8 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 </segment>
 <segment>
 <pinref part="SL3" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="182.88" x2="139.7" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="182.88" x2="139.7" y2="185.42" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="137.16" x2="322.58" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="322.58" y1="137.16" x2="322.58" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="P+5" gate="1" pin="+5V"/>
 </segment>
 <segment>
@@ -24496,114 +24499,105 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <net name="MOSI" class="0">
 <segment>
 <pinref part="SV1" gate="1" pin="4"/>
-<wire x1="210.82" y1="35.56" x2="215.9" y2="35.56" width="0.1524" layer="91"/>
-<label x="215.9" y="35.56" size="1.778" layer="95"/>
+<wire x1="342.9" y1="236.22" x2="347.98" y2="236.22" width="0.1524" layer="91"/>
+<label x="347.98" y="236.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="88.9" x2="226.06" y2="88.9" width="0.1524" layer="91"/>
-<label x="226.06" y="88.9" size="1.778" layer="95"/>
+<wire x1="241.3" y1="83.82" x2="248.92" y2="83.82" width="0.1524" layer="91"/>
+<label x="248.92" y="83.82" size="1.778" layer="95"/>
 <pinref part="IC2" gate="1" pin="PB3(MOSI/OC2A/PCINT3)"/>
-<wire x1="220.98" y1="88.9" x2="218.44" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
 <segment>
 <pinref part="SV1" gate="1" pin="5"/>
-<wire x1="195.58" y1="33.02" x2="190.5" y2="33.02" width="0.1524" layer="91"/>
-<label x="187.96" y="33.02" size="1.778" layer="95"/>
+<wire x1="327.66" y1="233.68" x2="322.58" y2="233.68" width="0.1524" layer="91"/>
+<label x="320.04" y="233.68" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="154.94" y1="142.24" x2="152.4" y2="142.24" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="142.24" x2="144.78" y2="142.24" width="0.1524" layer="91"/>
-<label x="144.78" y="142.24" size="1.778" layer="95"/>
+<wire x1="180.34" y1="137.16" x2="167.64" y2="137.16" width="0.1524" layer="91"/>
+<label x="167.64" y="137.16" size="1.778" layer="95"/>
 <pinref part="IC2" gate="1" pin="PC6(/RESET/PCINT14)"/>
-<wire x1="154.94" y1="142.24" x2="157.48" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK" class="0">
 <segment>
 <pinref part="SV1" gate="1" pin="3"/>
-<wire x1="195.58" y1="35.56" x2="190.5" y2="35.56" width="0.1524" layer="91"/>
-<label x="187.96" y="35.56" size="1.778" layer="95"/>
+<wire x1="327.66" y1="236.22" x2="322.58" y2="236.22" width="0.1524" layer="91"/>
+<label x="320.04" y="236.22" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="83.82" x2="226.06" y2="83.82" width="0.1524" layer="91"/>
-<label x="226.06" y="83.82" size="1.778" layer="95"/>
+<wire x1="241.3" y1="78.74" x2="248.92" y2="78.74" width="0.1524" layer="91"/>
+<label x="248.92" y="78.74" size="1.778" layer="95"/>
 <pinref part="IC2" gate="1" pin="PB5(SCK/PCINT5)"/>
-<wire x1="220.98" y1="83.82" x2="218.44" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="MISO" class="0">
 <segment>
 <pinref part="SV1" gate="1" pin="1"/>
-<wire x1="195.58" y1="38.1" x2="190.5" y2="38.1" width="0.1524" layer="91"/>
-<label x="187.96" y="38.1" size="1.778" layer="95"/>
+<wire x1="327.66" y1="238.76" x2="322.58" y2="238.76" width="0.1524" layer="91"/>
+<label x="320.04" y="238.76" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="220.98" y1="86.36" x2="226.06" y2="86.36" width="0.1524" layer="91"/>
-<label x="226.06" y="86.36" size="1.778" layer="95"/>
+<wire x1="241.3" y1="81.28" x2="248.92" y2="81.28" width="0.1524" layer="91"/>
+<label x="248.92" y="81.28" size="1.778" layer="95"/>
 <pinref part="IC2" gate="1" pin="PB4(MISO/PCINT4)"/>
-<wire x1="220.98" y1="86.36" x2="218.44" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RED_LED" class="0">
 <segment>
-<wire x1="220.98" y1="106.68" x2="228.6" y2="106.68" width="0.1524" layer="91"/>
-<label x="228.6" y="106.68" size="1.778" layer="95"/>
+<wire x1="241.3" y1="101.6" x2="251.46" y2="101.6" width="0.1524" layer="91"/>
+<label x="251.46" y="101.6" size="1.778" layer="95"/>
 <pinref part="IC2" gate="1" pin="PD5(T1/OC0B/PCINT21)"/>
-<wire x1="220.98" y1="106.68" x2="218.44" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GREEN_LED" class="0">
 <segment>
-<wire x1="220.98" y1="104.14" x2="241.3" y2="104.14" width="0.1524" layer="91"/>
-<label x="241.3" y="104.14" size="1.778" layer="95"/>
+<wire x1="241.3" y1="99.06" x2="264.16" y2="99.06" width="0.1524" layer="91"/>
+<label x="264.16" y="99.06" size="1.778" layer="95"/>
 <pinref part="IC2" gate="1" pin="PD6(AIN0/OC0A/PCINT22)"/>
-<wire x1="220.98" y1="104.14" x2="218.44" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BLUE_LED" class="0">
 <segment>
-<wire x1="220.98" y1="93.98" x2="228.6" y2="93.98" width="0.1524" layer="91"/>
-<label x="228.6" y="93.98" size="1.778" layer="95"/>
+<wire x1="241.3" y1="88.9" x2="251.46" y2="88.9" width="0.1524" layer="91"/>
+<label x="251.46" y="88.9" size="1.778" layer="95"/>
 <pinref part="IC2" gate="1" pin="PB1(OC1A/PCINT1)"/>
-<wire x1="220.98" y1="93.98" x2="218.44" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="WHITE_LED" class="0">
 <segment>
-<wire x1="220.98" y1="91.44" x2="241.3" y2="91.44" width="0.1524" layer="91"/>
-<label x="241.3" y="91.44" size="1.778" layer="95"/>
+<wire x1="241.3" y1="86.36" x2="264.16" y2="86.36" width="0.1524" layer="91"/>
+<label x="264.16" y="86.36" size="1.778" layer="95"/>
 <pinref part="IC2" gate="1" pin="PB2(SS/OC1B/PCINT2)"/>
-<wire x1="220.98" y1="91.44" x2="218.44" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GREEN_LED_OUT" class="0">
 <segment>
 <pinref part="SL1" gate="G$1" pin="7"/>
-<wire x1="231.14" y1="185.42" x2="223.52" y2="185.42" width="0.1524" layer="91"/>
-<label x="203.2" y="185.42" size="1.778" layer="95"/>
+<wire x1="350.52" y1="180.34" x2="342.9" y2="180.34" width="0.1524" layer="91"/>
+<label x="322.58" y="180.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BLUE_LED_OUT" class="0">
 <segment>
 <pinref part="SL1" gate="G$1" pin="6"/>
-<wire x1="231.14" y1="187.96" x2="218.44" y2="187.96" width="0.1524" layer="91"/>
-<label x="203.2" y="187.96" size="1.778" layer="95"/>
+<wire x1="350.52" y1="182.88" x2="337.82" y2="182.88" width="0.1524" layer="91"/>
+<label x="322.58" y="182.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="WHITE_LED_OUT" class="0">
 <segment>
 <pinref part="SL1" gate="G$1" pin="5"/>
-<wire x1="231.14" y1="190.5" x2="215.9" y2="190.5" width="0.1524" layer="91"/>
-<label x="203.2" y="190.5" size="1.778" layer="95"/>
+<wire x1="350.52" y1="185.42" x2="335.28" y2="185.42" width="0.1524" layer="91"/>
+<label x="322.58" y="185.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RED_LED_OUT" class="0">
 <segment>
 <pinref part="SL1" gate="G$1" pin="8"/>
-<wire x1="231.14" y1="182.88" x2="228.6" y2="182.88" width="0.1524" layer="91"/>
-<label x="203.2" y="182.88" size="1.778" layer="95"/>
+<wire x1="350.52" y1="177.8" x2="347.98" y2="177.8" width="0.1524" layer="91"/>
+<label x="322.58" y="177.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_SDA1" class="0">
@@ -24614,8 +24608,8 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 </segment>
 <segment>
 <pinref part="IC2" gate="1" pin="PC4(ADC4/SDA/PCINT12)"/>
-<wire x1="218.44" y1="132.08" x2="236.22" y2="132.08" width="0.1524" layer="91"/>
-<label x="233.68" y="132.08" size="1.778" layer="95"/>
+<wire x1="241.3" y1="127" x2="259.08" y2="127" width="0.1524" layer="91"/>
+<label x="256.54" y="127" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_SCL1" class="0">
@@ -24626,8 +24620,8 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 </segment>
 <segment>
 <pinref part="IC2" gate="1" pin="PC5(ADC5/SCL/PCINT13)"/>
-<wire x1="218.44" y1="129.54" x2="236.22" y2="129.54" width="0.1524" layer="91"/>
-<label x="233.68" y="129.54" size="1.778" layer="95"/>
+<wire x1="241.3" y1="124.46" x2="259.08" y2="124.46" width="0.1524" layer="91"/>
+<label x="256.54" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL0_I2C_ID_EEPROM" class="0">
@@ -24662,8 +24656,8 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 </segment>
 <segment>
 <pinref part="SL3" gate="G$1" pin="2"/>
-<wire x1="152.4" y1="180.34" x2="139.7" y2="180.34" width="0.1524" layer="91"/>
-<label x="127" y="180.34" size="1.778" layer="95"/>
+<wire x1="335.28" y1="134.62" x2="322.58" y2="134.62" width="0.1524" layer="91"/>
+<label x="309.88" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCLK_SPI" class="0">
@@ -24674,15 +24668,15 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 </segment>
 <segment>
 <pinref part="SL3" gate="G$1" pin="3"/>
-<wire x1="152.4" y1="177.8" x2="139.7" y2="177.8" width="0.1524" layer="91"/>
-<label x="127" y="177.8" size="1.778" layer="95"/>
+<wire x1="335.28" y1="132.08" x2="322.58" y2="132.08" width="0.1524" layer="91"/>
+<label x="309.88" y="132.08" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="IC2" gate="1" pin="AREF"/>
 <pinref part="C4" gate="G$1" pin="1"/>
-<wire x1="157.48" y1="104.14" x2="149.86" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="99.06" x2="172.72" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ADC0" class="0">
@@ -24694,8 +24688,8 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 </segment>
 <segment>
 <pinref part="IC2" gate="1" pin="PC0(ADC0/PCINT8)"/>
-<wire x1="218.44" y1="142.24" x2="236.22" y2="142.24" width="0.1524" layer="91"/>
-<label x="233.68" y="142.24" size="1.778" layer="95"/>
+<wire x1="241.3" y1="137.16" x2="259.08" y2="137.16" width="0.1524" layer="91"/>
+<label x="256.54" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
@@ -25006,7 +25000,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <pinref part="CREE_LED2" gate="G$4" pin="C"/>
 </segment>
 </net>
-<net name="TEST1" class="0">
+<net name="BLUE_POWER" class="0">
 <segment>
 <pinref part="UR14" gate="G$1" pin="VDD"/>
 <wire x1="104.14" y1="109.22" x2="101.6" y2="109.22" width="0.1524" layer="91"/>
@@ -25023,7 +25017,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <wire x1="66.04" y1="109.22" x2="66.04" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GLUMP1" class="0">
+<net name="RED_POWER" class="0">
 <segment>
 <pinref part="UR10" gate="G$1" pin="VDD"/>
 <wire x1="106.68" y1="223.52" x2="104.14" y2="223.52" width="0.1524" layer="91"/>
@@ -25040,7 +25034,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <wire x1="68.58" y1="223.52" x2="68.58" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SCHMARN1" class="0">
+<net name="GREEN_POWER" class="0">
 <segment>
 <pinref part="UR12" gate="G$1" pin="VDD"/>
 <wire x1="104.14" y1="165.1" x2="101.6" y2="165.1" width="0.1524" layer="91"/>
@@ -25057,7 +25051,7 @@ Source: &lt;a href="http://www.cree.com/products/pdf/LEDlamps/CLN6A%28979%29.pdf
 <wire x1="66.04" y1="165.1" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="ZEUCH1" class="0">
+<net name="WHITE_POWER" class="0">
 <segment>
 <pinref part="UR16" gate="G$1" pin="VDD"/>
 <wire x1="99.06" y1="45.72" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
